@@ -1,2 +1,2 @@
-def sub(a: int, b: int) -> int:
+def sub(a, b):
     return a - b

@@ -11,7 +11,7 @@ def button_click():
     while type_of_number != 3:
         print('1. Рациональные')
         print('2. Комплексные')
-        print('3. Выход')
+        print('3. Выход\n')
         print('С какими числами будем работать?')
         type_of_number = ex.type_of_number()
 
@@ -23,7 +23,7 @@ def button_click():
             print('5. Остаток от деление')
             print('6. Умножение')
             print('7. Возведение в степень')
-            print('8. Извлечение корня')
+            print('8. Извлечение корня\n')
             print('Какую операцию будем производить?')
             operation = ex.operation()
 
@@ -83,7 +83,7 @@ def button_click():
                 print('Квадратный корень равен: ', result)
             else:
                 print('Такой операции не существует.')
-    
+
         elif type_of_number == 2:
             print('1. Сложение')
             print('2. Вычитание')
@@ -93,7 +93,7 @@ def button_click():
             print('6. Извлечение корня')
             print('Какую операцию будем производить?')
             operation = ex.operation()
-        
+
             if operation == 1:
                 print('Введите реальную часть первого числа: ')
                 a1 = ex.number()
@@ -165,10 +165,9 @@ def button_click():
                 print('Квадратный корень равен: ', result)
             else:
                 print('Такой операции не существует.')
-    
+
         elif type_of_number == 3:
             exit()
-        
+
         else:
             print('Такого номера нет в списке.')
-

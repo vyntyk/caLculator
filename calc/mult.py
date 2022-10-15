@@ -1,2 +1,5 @@
-def mult(a: int, b: int) -> int:
+def mult(a, b):
     return a * b
+
+def pow(a, b):
+    return a ** b

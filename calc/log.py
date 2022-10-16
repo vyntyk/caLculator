@@ -1,9 +1,3 @@
-# Логгирование,
-# дата, время,
-# вид операции,
-# входные данные,
-# выходные данные
-
 from datetime import datetime as dt
 from time import time
 import __init__ as init
@@ -16,4 +10,4 @@ def for_logger():
         data = log[1], log[2]
         result = log[-1]
         with open('log.csv', 'a', encoding="utf-8") as file:
-            file.write(f'Время: {time}; Операция: {op}; Входные данные: {data}; Результат: {result} \n')
+            file.write('\n' + f'Время: {time}; Операция: {op}; Входные данные: {data}; Результат: {result} ')

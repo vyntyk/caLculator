@@ -8,6 +8,7 @@ import log as lg
 
 more_log = []
 
+
 def button_click():
     type_of_number = 0
     while not type_of_number:
@@ -191,7 +192,7 @@ def button_click():
 
         else:
             print('Такого номера нет в списке.')
-        
+
         more_log.append(for_log)
-    
-    return(more_log)
+
+    return (more_log)

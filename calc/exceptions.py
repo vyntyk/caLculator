@@ -7,6 +7,7 @@ def type_of_number():
             result = input('Ошибка! Вы неверно ввели номер из списка! Попробуйте еще раз. ')
     return result
 
+
 def operation():
     result = input()
     while type(result) != int:
@@ -15,6 +16,7 @@ def operation():
         except:
             result = input('Ошибка! Вы неверно ввели номер операции! Попробуйте еще раз. ')
     return result
+
 
 def number():
     result = input()

@@ -6,8 +6,14 @@
 
 from datetime import datetime as dt
 from time import time
+import __init__ as init
 
-
-time = dt.now().strftime("%A %B %d %H:%M:%S %Y")
-with open('log.csv', 'a+', encoding="utf-8") as file:
-    file.write('Время: ' + time)
+def for_logger():
+    time = dt.now().strftime("%A %B %d %H:%M:%S %Y")
+    for_log = init.button_click()
+    for log in for_log:
+        op = log[0]
+        data = log[1], log[2]
+        result = log[-1]
+        with open('log.csv', 'a', encoding="utf-8") as file:
+            file.write(f'Время: {time}; Операция: {op}; Входные данные: {data}; Результат: {result} \n')

@@ -1,6 +1,3 @@
-from unittest import result
-
-
 def type_of_number():
     result = input()
     while type(result) != int:
